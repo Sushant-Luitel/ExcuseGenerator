@@ -13,7 +13,7 @@ function App() {
     <>
       <h1>Excuse Generator</h1>
       <h2>Pick a Category you like to generate the Excuse for:</h2>
-      <button>Hi</button>
+
       <button onClick={() => fetchAge("family")}>Family</button>
       <button onClick={() => fetchAge("funny")}>Funny</button>
       <button onClick={() => fetchAge("party")}>Party</button>
