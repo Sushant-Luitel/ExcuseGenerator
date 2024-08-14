@@ -4,8 +4,8 @@ import Axios from "axios";
 function App() {
   const [excuse, SetExcuse] = useState("");
   const fetchAge = (parameter) => {
-    Axios.get(`https://excuser-three.vercel.app/v1/excuse/${parameter}/`).then(
-      (res) => SetExcuse(res.data[0].excuse)
+    Axios.get(`https://excuser-three.vercel.app/v1/excuse/family/`).then(
+      (res) => console.log(res.data)
     );
   };
 
@@ -13,7 +13,7 @@ function App() {
     <>
       <h1>Excuse Generator</h1>
       <h2>Pick a Category you like to generate the Excuse for:</h2>
-
+      <button>Hi</button>
       <button onClick={() => fetchAge("family")}>Family</button>
       <button onClick={() => fetchAge("funny")}>Funny</button>
       <button onClick={() => fetchAge("party")}>Party</button>
